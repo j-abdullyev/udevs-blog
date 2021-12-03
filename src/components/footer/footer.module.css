@@ -1,0 +1,36 @@
+.footer{
+    width: 100%;
+    background: #F9F9F9;
+}
+.footer_inner{
+    width: 1500px;
+    margin:  100px auto 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.footer_block:first-child{
+    width: 396px;
+}
+.footer_block{
+    width: 190px;
+}
+.text{
+    font-size: 15px;
+    margin-top: 50px;
+}
+.footer_header_list{
+    font-weight: bold;
+    font-size: 18px;
+}
+.list{
+    font-size: 16px;
+    margin-top: 20px;
+}
+.copy_right{
+    color: #8c9196;
+    width: 1500px;
+    margin: 0 auto;
+    font-size: 15px;
+    padding-bottom: 50px;
+}
