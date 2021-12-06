@@ -38,7 +38,7 @@
 /* Profile component left side of body */
 .profile{
     width: 15%;
-    text-align: center;align-self: flex-start;
+    text-align: center;
 }
 .profile_name{
     font-size: 22px;

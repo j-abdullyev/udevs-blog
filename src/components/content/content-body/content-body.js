@@ -15,7 +15,7 @@ const ContentBody = () => {
     const {id} = useParams()
 
     useEffect(() => {
-        getPosts()
+        getPosts();
     },[])
 
     function getPosts(){
