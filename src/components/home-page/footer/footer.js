@@ -1,5 +1,6 @@
 import style from './footer.module.css'
 import logo from '../../../images/logo.png'
+import React from 'react';
 
 
 

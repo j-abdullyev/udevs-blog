@@ -1,6 +1,7 @@
 import style from './header.module.css' 
 import logo from '../../../images/logo.png'
 import bell from '../../../images/bell.png'
+import React from 'react';
 import Menu from './menu'
 
 const Header = () => {

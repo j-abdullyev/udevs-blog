@@ -3,6 +3,7 @@ import style from './blog-list.module.css'
 import img1 from '../../../images/img1.png'
 import img2 from '../../../images/img2.png'
 import img3 from '../../../images/img3.png'
+import React from 'react';
 import axios from 'axios'
 import { useEffect, useState } from "react"
 

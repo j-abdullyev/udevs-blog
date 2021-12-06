@@ -1,6 +1,7 @@
 import style from './content-body.module.css'
 import ava from '../../../images/ava.png'
 import bookmark from '../../../images/bookmark.png'
+import React from 'react';
 
 
 const Profile = () => {

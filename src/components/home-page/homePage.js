@@ -1,6 +1,7 @@
 import Footer from "./footer/footer"
 import Header from "./header/header"
 import BlogList from "./blog-list/blog-list"
+import React from 'react';
 
 
 

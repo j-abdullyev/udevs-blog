@@ -1,4 +1,5 @@
 import axios from 'axios'
+import React from 'react';
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 import style from './content-body.module.css'
