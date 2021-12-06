@@ -1,6 +1,6 @@
 import style from './header.module.css' 
-import logo from '../../images/logo.png'
-import bell from '../../images/bell.png'
+import logo from '../../../images/logo.png'
+import bell from '../../../images/bell.png'
 import Menu from './menu'
 
 const Header = () => {
@@ -10,7 +10,7 @@ const Header = () => {
                 <img className={style.logo} src={logo}/>
                 <div className={style.reg}>
                     <img className={style.bell} src={bell} />
-                    <button className={style.enter}>Войти</button>
+                    <button className={style.enter_btn}>Войти</button>
                 </div>
             </div>
             <Menu />

@@ -1,0 +1,30 @@
+.container{
+    width: 100%;
+    margin-top: 30px;
+}
+.header{
+    width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.inner_menu{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+.inner_menu div{
+    font-size: 18px;
+    cursor: pointer;
+}
+.enter_btn{
+    color: white;
+    background: #1B5BF7;
+    height: 48px;
+    width: 80px;
+    border-radius: 8px;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+}

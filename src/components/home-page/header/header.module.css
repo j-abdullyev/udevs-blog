@@ -3,10 +3,11 @@
     margin-top: 30px;
 }
 .header{
-    width: 100%;
+    width: 1500px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
 }
 .reg{
     display: flex;
@@ -14,7 +15,7 @@
     width: 125px;
     justify-content: space-between;
 }
-.enter{
+.enter_btn{
     color: white;
     background: #1B5BF7;
     height: 48px;
@@ -24,8 +25,11 @@
     border: none;
     cursor: pointer;
 }
-
 .menu{
+    width: 1500px;
+    margin: 0 auto;
+}
+.inner_menu{
     width: 55%;
     margin-top: 50px; 
     display: flex;

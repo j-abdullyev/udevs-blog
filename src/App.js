@@ -1,18 +1,29 @@
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
-import BlogList from './components/blog-list/blog-list';
-import Footer from './components/footer/footer';
-import Header from './components/header/header';
+import BlogList from './components/home-page/blog-list/blog-list';
+import HomePage from './components/home-page/homePage';
+import Footer from './components/home-page/footer/footer';
+import Header from './components/home-page/header/header';
+import ContentPage from './components/content/content-page';
 
 
 
 function App() {
   return (
     <div className="App">
-      <div className="wrapper">
-        <Header />
-        <BlogList />
-      </div>
-        <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/post/:id" element={<ContentPage />}></Route>
+        </Routes>
+     
+      {/* <HomePage /> */}
+        {/* <div className="wrapper">
+          <Header />
+          <BlogList />
+        </div>
+        <Footer /> */}
+      </BrowserRouter>
     </div>
   );
 }

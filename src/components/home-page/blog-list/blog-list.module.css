@@ -5,6 +5,22 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.blog_container_inner{
+    width: 1500px;
+    margin:  0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-y:  scroll;
+    height: 650px;
+}
+.blog_container_inner::-webkit-scrollbar{
+    width: 5px;
+    background-color: lightgray;
+}
+.blog_container_inner::-webkit-scrollbar-thumb{
+    background-color: #1B5BF7;
+}
 .blog_item{
     width: 360px;
     transition: .3s;
@@ -26,9 +42,10 @@
     justify-content: space-between;
     width: 60%;
     margin-top: 20px;
+    padding: 0 10px;
+    margin-bottom: 5px;
 }
-.comment{
-    text-align: left;
-    padding: 20px 0;
-    font-size: 18px;
+.blog_item a{
+    text-decoration: none;
+    color: black;
 }
