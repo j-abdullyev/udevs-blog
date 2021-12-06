@@ -30,7 +30,7 @@ const ContentBody = () => {
             <div className={style.wrapper}>
                 <Profile />
                 <div className={style.content}>
-                    <img src={img}></img>
+                    <img src={img} alt=""></img>
                     <div className={style.info_name}>Фото: Dilorom Alieva</div>
                     <div className={style.date}> <span>18:26 11.01.2021</span>  <span>|</span> <span>365</span></div>
                     <h2 className={style.title}>{posts.title}</h2>

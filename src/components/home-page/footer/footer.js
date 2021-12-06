@@ -9,7 +9,7 @@ const Footer = () => {
         <div className={style.footer}>
             <div className={style.footer_inner}>
                 <div className={style.footer_block}>
-                    <img src={logo} />
+                    <img src={logo} alt=""/>
                     <div className={style.text}>Помощник в публикации статей, журналов.
                         Список популярных международных конференций.
                         Всё для студентов и преподавателей.

@@ -6,7 +6,7 @@ const ContentHeader = () => {
     return(
         <div className={style.container}>
             <div className={style.header}>
-                <img className={style.logo} src={logo} />
+                <img className={style.logo} src={logo} alt=""/>
                 <div className={style.inner_menu}>
                     <div>Все потоки</div>
                     <div>Разработка</div>

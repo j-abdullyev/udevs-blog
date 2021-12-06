@@ -8,9 +8,9 @@ const Header = () => {
     return(
         <div className={style.container}>
             <div className={style.header}>
-                <img className={style.logo} src={logo}/>
+                <img className={style.logo} src={logo} alt=""/>
                 <div className={style.reg}>
-                    <img className={style.bell} src={bell} />
+                    <img className={style.bell} src={bell} alt=""/>
                     <button className={style.enter_btn}>Войти</button>
                 </div>
             </div>

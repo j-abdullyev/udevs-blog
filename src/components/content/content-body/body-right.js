@@ -1,7 +1,6 @@
 import axios from 'axios'
 import React from 'react';
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router'
 import style from './content-body.module.css'
 import img from '../../../images/sigar.png'
 
@@ -31,7 +30,7 @@ const NewsBlog = () => {
                 
                 <div className={style.recent_news}> {news.map((item) => (
                     <div className={style.news_item} key={item.id}>
-                        <img src={img}></img>
+                        <img src={img} alt=""></img>
                         <div>{item.title}
                             <div className={style.date1}> <span>18:26 11.01.2021</span>  <span>|</span> <span>365</span></div>
                         </div>
