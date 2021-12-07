@@ -15,16 +15,17 @@ const ContentBody = () => {
     const {id} = useParams()
 
     useEffect(() => {
-        getPosts();
+        // getPosts();
+        function getPosts(){
+            axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
+            .then(({data}) => {
+                setPosts(data)
+            })
+            .catch((error) => console.log(error))
+        }
     },[])
 
-    function getPosts(){
-        axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)
-        .then(({data})=> {
-            setPosts(data)
-        })
-        .catch((error) => console.log(error))
-    }
+    
     return(
         <div className={style.content_body}>
             <div className={style.wrapper}>
