@@ -5,6 +5,7 @@ import React from 'react';
 import Menu from './menu'
 import { useState } from 'react';
 import ava from '../../../images/real.png'
+import signout from '../../../images/signout.png'
 
 const Header = () => {
     const [open, setOpen] = useState(false);
@@ -35,12 +36,10 @@ const Header = () => {
                     <img className={style.bell} src={bell} alt=""/>
                     {!authorized &&  <button className={style.enter_btn} onClick={()=> setOpen(true)}>Войти</button>}
                     {authorized && 
-                        <div className={style.dropdown}>
-                            <img src={ava} className={style.ava} />
-                            <div onClick={signOut} className={style.dropdown_content}>Sign Out</div>
-                        </div>
-                            
-                            
+                    <div className={style.authorized}>
+                        <img src={ava} className={style.ava} />
+                        <img src={signout} onClick={signOut} title="sign out" className={style.sign_out}/>
+                    </div>
                         }
                     {/* <button className={style.enter_btn} onClick={()=> setOpen(true)}>Войти</button> */}
                     
