@@ -2,7 +2,7 @@
     width: 100%;
 }
 .wrapper{
-    width: 1500px;
+    width: 1200px;
     margin: 80px auto;
     display: flex;
     align-items: center;
@@ -11,7 +11,9 @@
 .content{
     width: 60%;
 }
-
+.content img{
+    width: 685px;
+}
 .info_name{
     font-style: italic;
     font-size: 16px;
@@ -37,7 +39,7 @@
 
 /* Profile component left side of body */
 .profile{
-    width: 15%;
+    width: 18%;
     text-align: center;
 }
 .profile_name{
@@ -85,6 +87,7 @@
     background-color: blue;
 }
 .recent_news::-webkit-scrollbar-thumb{
+    width: 5px;
     background-color: brown;
 }
 .news_item{
@@ -95,10 +98,11 @@
 }
 .news_item img{
     margin-right: 8px;
+    width: 100px;
 }
 .date1{
     color: #AEBEC9;
     text-align: left;
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 20px;
 }

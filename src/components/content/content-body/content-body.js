@@ -16,7 +16,7 @@ const ContentBody = () => {
 
     useEffect(() => {
         getPosts();
-    },[])
+    }, [])
 
     function getPosts(){
         axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`)

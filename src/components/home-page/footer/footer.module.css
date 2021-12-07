@@ -3,7 +3,7 @@
     background: #F9F9F9;
 }
 .footer_inner{
-    width: 1500px;
+    width: 1200px;
     margin:  100px auto 0;
     display: flex;
     justify-content: space-between;
@@ -29,7 +29,7 @@
 }
 .copy_right{
     color: #8c9196;
-    width: 1500px;
+    width: 1200px;
     margin: 0 auto;
     font-size: 15px;
     padding-bottom: 50px;

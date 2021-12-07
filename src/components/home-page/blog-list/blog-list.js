@@ -25,7 +25,8 @@ const BlogList = () => {
     function getPost(){
         axios.get('https://jsonplaceholder.typicode.com/posts')
         .then(({data}) => {
-            setPost(data)
+            let sliced = data.slice(0,15)
+            setPost(sliced)
         })
         .catch(error => console.log(error))
     }
