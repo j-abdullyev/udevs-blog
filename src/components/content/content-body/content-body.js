@@ -23,6 +23,7 @@ const ContentBody = () => {
             })
             .catch((error) => console.log(error))
         }
+        getPosts();
     },[])
 
     
