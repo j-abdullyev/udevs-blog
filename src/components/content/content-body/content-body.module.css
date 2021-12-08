@@ -6,13 +6,14 @@
     margin: 80px auto;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .content{
-    width: 60%;
+    width: 680px;
 }
 .content img{
-    width: 685px;
+    width: 680px;
 }
 .info_name{
     font-style: italic;
@@ -33,17 +34,18 @@
 }
 .body{
     font-size: 16px;
+    line-height: 1.5;
 }
 
 
 
 /* Profile component left side of body */
 .profile{
-    width: 18%;
+    width: 150px;
     text-align: center;
 }
 .profile_name{
-    font-size: 22px;
+    font-size: 20px;
 }
 .follow{
     display: flex;
@@ -54,7 +56,7 @@
 .follow_btn{
     background-color: #1B5BF7;
     border-radius: 15px;
-    padding: 8px 37px;
+    padding: 8px 30px;
     color: white;
     margin-right: 5px;
 }
@@ -69,7 +71,7 @@
 
 
 .news_blog{
-    width: 25%;
+    width: 300px;
     overflow-y: scroll;
     height: 500px;
     align-self: flex-start;
@@ -98,11 +100,13 @@
 }
 .news_item img{
     margin-right: 8px;
-    width: 100px;
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
 }
 .date1{
     color: #AEBEC9;
     text-align: left;
     font-size: 14px;
-    margin-top: 20px;
+    
 }

@@ -37,8 +37,8 @@ const Header = () => {
                     {!authorized &&  <button className={style.enter_btn} onClick={()=> setOpen(true)}>Войти</button>}
                     {authorized && 
                     <div className={style.authorized}>
-                        <img src={ava} className={style.ava} />
-                        <img src={signout} onClick={signOut} title="sign out" className={style.sign_out}/>
+                        <img src={ava} className={style.ava} alt=""/>
+                        <img src={signout} onClick={signOut} title="sign out" className={style.sign_out} alt=""/>
                     </div>
                         }
                     {/* <button className={style.enter_btn} onClick={()=> setOpen(true)}>Войти</button> */}
