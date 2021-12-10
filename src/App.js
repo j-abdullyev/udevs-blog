@@ -15,12 +15,7 @@ function App() {
           <Route path="/post/:id" element={<ContentPage />}></Route>
         </Routes>
      
-      {/* <HomePage /> */}
-        {/* <div className="wrapper">
-          <Header />
-          <BlogList />
-        </div>
-        <Footer /> */}
+     
       </BrowserRouter>
     </div>
   );

@@ -9,11 +9,11 @@
     align-items: center;
     margin: 0 auto;
 }
-.ava{
+/* .ava{
     width: 80px;
     border-radius: 50%;
     cursor: pointer;
-}
+} */
 .reg{
     display: flex;
     align-items: center;
@@ -113,4 +113,21 @@
     right: 0;
     background-color: rgba(0,0,0,0.8); 
     z-index: 10;
+}
+.sign_up{
+    margin: 10px 0;
+    font-size: 16px;
+}
+.sign_up span{
+    cursor: pointer;
+}
+.sign_up span:hover{
+    text-decoration: underline;
+}
+.sign_out_image{
+    width: 35px;
+    cursor: pointer;
+}
+.ava{
+    width: 100px;
 }
