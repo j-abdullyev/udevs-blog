@@ -19,16 +19,25 @@ const Header = () => {
      onAuthStateChanged(auth, (currentUser) => {
         setUser(currentUser)
     })
-    
+   
     const signUp = async () => {
         try{
             const user = await createUserWithEmailAndPassword(auth, registerEmail, registerPassword)
             console.log(user)
+            console.log(registerEmail)
+            window.location.reload(false);
         }catch(error){
             console.log(error.message)
+            if (registerEmail === '' || registerPassword === '') {
+                alert("Fill the blanks")
+            } else { 
+                alert("Enter valid email") 
+            }
+            
         }
-        window.location.reload(false);
+        // window.location.reload(false);
     }
+
     const signIn = async () => {
         try{
             const user = await signInWithEmailAndPassword(auth, registerEmail, registerPassword)
@@ -40,6 +49,7 @@ const Header = () => {
         }
         
     }
+
     const logOut = async () => {
         await signOut(auth)
     }
@@ -62,12 +72,12 @@ const Header = () => {
            
             <div className={`${style.modal} ${open ? style.visible : ""}` }>
                 <div className={style.login_header}>Вход на udevs news</div>
-                
               
                     <input
                         className={style.email}
                         onChange={(event) => { setregisterEmail(event.target.value) }}
-                        type="email" placeholder="Email"
+                        type="email" 
+                        placeholder="Email"
                     />
                     <input
                         className={style.parol}
