@@ -1,0 +1,19 @@
+.publish{
+    width: 1200px;
+    margin: 0 auto;
+}
+.h2{
+    margin: 100px 0 40px;
+}
+.title_header, .text_header{
+    font-size: 16px;
+    color: #48535B;
+}
+.publish_title, .publish_text{
+    width: 600px;
+    outline: none;
+    border: 1px solid lightgray;
+    padding: 8px;
+    border-radius: 6px;
+    margin: 10px 0 40px;
+}

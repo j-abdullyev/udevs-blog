@@ -1,0 +1,80 @@
+.info_container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.profile_info{
+    margin-top: 100px;
+    display: flex;
+    align-items: flex-start;
+}
+.img_info{
+    margin-right: 50px;
+}
+.info_name{
+    font-size: 34px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+.text_info table{
+    width: 600px;
+}
+.text_info td{
+    padding: 10px;  
+    font-size: 16px;  
+}
+.text_info tr:nth-child(odd){
+    background-color: #F6F8F9;
+}
+.text_info tr:nth-child(even){
+    background-color: #fdfdfd;
+}
+
+
+ /* publication block */
+
+
+.publication{
+    margin: 100px 0 250px 0;
+} 
+.publication_block{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.publication_block img{
+    width: 600px;
+}
+.publication_text{
+    width: 570px;
+}
+.p_header{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.p_date{
+    color: #AEBEC9;
+    text-align: left;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-bottom: 15px;
+}
+.human_rights{
+    color: #2668F7;
+}
+.p_text{
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    color: #555555;
+}
+.read_btn{
+    color: white;
+    background: #1B5BF7;
+    width: 153px;
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}

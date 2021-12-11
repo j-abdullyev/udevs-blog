@@ -44,8 +44,12 @@
     width: 150px;
     text-align: center;
 }
+.profile a{
+    text-decoration: none;
+}
 .profile_name{
     font-size: 20px;
+    color: black;
 }
 .follow{
     display: flex;

@@ -9,6 +9,7 @@ import signout from '../../../images/signout.png'
 import'../../../App.css'
 import {createUserWithEmailAndPassword, onAuthStateChanged, signOut, signInWithEmailAndPassword} from 'firebase/auth'
 import { auth } from '../../../firebase';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [open, setOpen] = useState(false);
@@ -58,14 +59,29 @@ const Header = () => {
     return(
         <div className={style.container}>
             <div className={style.header}>
-                <img className={style.logo} src={logo} alt=""/>
+                <Link to="/"> <img className={style.logo} src={logo} alt=""/></Link>
+               
                 <div className={style.reg}>
                        {!user && <button className={style.enter_btn} onClick={()=> setOpen(true)}>Войти</button> }
-                       {user && <div className={style.authorized}>
-                           {user?.email}
-                           <img src={ava}  className={style.ava}  alt=""/>
-                        <img  src={signout} onClick={logOut} className={style.sign_out_image} alt="" title="sign out"/>
-                       </div> }
+                       {user && 
+                        <div className={style.authorized}>
+                            {user?.email}
+                            <div className={style.dropdown}>
+                                <img src={ava} className={style.ava} alt="" />
+                                <div className={style.dropdown_content}>
+                                    <Link to="/publish">Написать публикацию</Link>
+                                    <Link to="/">Избранные</Link>
+                                    <Link to="/">Выйти</Link>
+                                </div>
+                            </div>
+                            <img
+                                src={signout}
+                                onClick={logOut}
+                                className={style.sign_out_image}
+                                alt=""
+                                title="sign out"
+                            />
+                        </div>}
                 </div>
             </div>
             <Menu />

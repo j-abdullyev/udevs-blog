@@ -5,6 +5,7 @@ import axios from 'axios'
 import { useEffect, useState } from "react"
 import {db} from '../../../firebase'
 import {collection, getDocs} from '@firebase/firestore'
+import GetResult from "../../publish-settings/getResult";
 
 
 
@@ -35,6 +36,7 @@ const BlogList = () => {
     return(
         <div className={style.blog_container}>
             <div className={style.blog_container_inner}>
+                <GetResult />
                 {post.map((item) => (
                     <BlogListItem key={item.id} {...item} />
                 ))}
