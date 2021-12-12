@@ -50,7 +50,6 @@ const Header = () => {
         }
         
     }
-
     const logOut = async () => {
         await signOut(auth)
     }

@@ -3,7 +3,7 @@ import style from './profileInfo.module.css'
 import guys2 from '../../../images/guys2.png'
 import Footer from '../../home-page/footer/footer'
 import PublishSettings from '../../publish-settings/publish-settings'
-import GetResult from '../../publish-settings/getResult'
+
 
 const ProfileInfo = (props) => {
 
@@ -37,7 +37,7 @@ const ProfileInfo = (props) => {
             <div className={style.publication}>
                 <h3>ПУБЛИКАЦИИ</h3>
 
-                <GetResult />
+                
                 
                 <div className={style.publication_block}>
                     <img src={guys2}></img>

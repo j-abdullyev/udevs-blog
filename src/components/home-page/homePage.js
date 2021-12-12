@@ -6,7 +6,7 @@ import React from 'react';
 
 
 
-const HomePage = () =>{
+const HomePage = (props) =>{
     return(
         <div>
             <Header/>
