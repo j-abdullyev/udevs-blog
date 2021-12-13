@@ -2,7 +2,6 @@ import ava from '../../../images/ava-profile.png'
 import style from './profileInfo.module.css'
 import guys2 from '../../../images/guys2.png'
 import Footer from '../../home-page/footer/footer'
-import PublishSettings from '../../publish-settings/publish-settings'
 
 
 const ProfileInfo = (props) => {
@@ -36,14 +35,12 @@ const ProfileInfo = (props) => {
 
             <div className={style.publication}>
                 <h3>ПУБЛИКАЦИИ</h3>
-
-                
-                
                 <div className={style.publication_block}>
-                    <img src={guys2}></img>
+                    
+                    <img src={guys2} alt=""></img>         
                     <div className={style.publication_text}>
                         <div className={style.p_header}>По инициативе Узбекистана создана Группа друзей по правам молодежи</div>
-                        <div className={style.p_date}>18:26  11.01.2021 <span>|</span> <span>365</span> <span className={style.human_rights}>Права человека</span> </div>
+                       <div className={style.p_date}>18:26  11.01.2021 <span>|</span> <span>365</span> <span className={style.human_rights}>Права человека</span> </div>
                         <div className={style.p_text}>Посланник Генерального секретаря ООН по делам молодежи Джаятма Викраманаяке приняла участие в презентации созданной по инициативе Узбекистана Группе друзей по правам молодежи. В рамках этого международного проекта планируется продвижение прав молодых жителей планеты и расшире...</div>
                         <button className={style.read_btn}>Читать</button>
                     </div>

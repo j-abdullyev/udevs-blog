@@ -3,7 +3,8 @@ import style from './blog-list.module.css'
 import React from 'react';
 import { useEffect, useState } from "react"
 import {db} from '../../../firebase'
-import {addDoc, collection, getDocs} from '@firebase/firestore'
+import {collection, getDocs} from '@firebase/firestore'
+import ProfileInfo from "../../profile-page/profile-info/profileInfo";
 
 
 
@@ -29,10 +30,12 @@ const BlogList = (props) => {
     return(
         <div className={style.blog_container}>
             <div className={style.blog_container_inner}>
-         
                 {post.map((item) => (
                     <BlogListItem key={item.id} {...item} />
                 ))}
+                {post.map((item)=> {
+                    <ProfileInfo key={item.id} {...item} />
+                })}
             </div>
         </div>
     )

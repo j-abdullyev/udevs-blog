@@ -19,5 +19,4 @@ const BlogListItem = ({ id, image, title}) => {
 }
 
 
-
 export default BlogListItem

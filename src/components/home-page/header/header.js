@@ -1,7 +1,5 @@
 import style from './header.module.css' 
 import logo from '../../../images/logo.png'
-import bell from '../../../images/bell.png'
-import React, { useEffect, useRef } from 'react';
 import Menu from './menu'
 import { useState } from 'react';
 import ava from '../../../images/real.png'

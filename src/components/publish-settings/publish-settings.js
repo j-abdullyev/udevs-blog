@@ -10,14 +10,14 @@ import { collection, getDocs, addDoc } from "@firebase/firestore"
 
 
 const PublishSettings = () => {
-    const [post, setPost] = useState([]);
+    const [post, setPost] = useState({});
     const [newTitle, setNewTitle] = useState("")
     const [newText, setNewText] = useState("")  
-    const [newImage, setnewImage] = useState("")
+    // const [newImage, setnewImage] = useState("")
     const postsCollectionRef = collection(db, '7');
 
     const createPost = async () => {
-        await addDoc(postsCollectionRef, {title: newTitle, text: newText, image: newImage})
+        await addDoc(postsCollectionRef, {title: newTitle, text: newText})
         window.location.reload(false);
         alert("Your post succesfully posted. Go to home page to see it!")
     }
@@ -32,7 +32,6 @@ const PublishSettings = () => {
             setPost(res.docs.map((doc) => ({ ...doc.data(), id: doc.id})))
         })
     }
-
 
 
     return(
