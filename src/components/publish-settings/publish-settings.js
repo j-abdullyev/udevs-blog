@@ -3,7 +3,6 @@ import Footer from "../home-page/footer/footer"
 import Header from "../home-page/header/header"
 import style from './publishSettings.module.css'
 import {db}  from "../../firebase"
-
 import React, { useEffect } from "react"
 import { collection, getDocs, addDoc } from "@firebase/firestore"
 
