@@ -10,7 +10,7 @@ import { collection, getDocs, addDoc } from "@firebase/firestore"
 
 
 const PublishSettings = () => {
-    const [post, setPost] = useState({});
+    const [createdPost, setCreatedPost] = useState([]);
     const [newTitle, setNewTitle] = useState("")
     const [newText, setNewText] = useState("")  
     // const [newImage, setnewImage] = useState("")
@@ -22,14 +22,13 @@ const PublishSettings = () => {
         alert("Your post succesfully posted. Go to home page to see it!")
     }
  
-
     useEffect(() => {
         getPosts()
     },[])
 
     function getPosts() {
         getDocs(postsCollectionRef).then((res) => {
-            setPost(res.docs.map((doc) => ({ ...doc.data(), id: doc.id})))
+            setCreatedPost(res.docs.map((doc) => ({ ...doc.data(), id: doc.id})))
         })
     }
 

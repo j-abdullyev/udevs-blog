@@ -18,8 +18,6 @@ function App() {
           <Route path="/profile" element={<ProfilePage />}></Route>
           <Route path="/publish" element={<PublishSettings />}></Route>
         </Routes>
-     
-     
       </BrowserRouter>
     </div>
   );
