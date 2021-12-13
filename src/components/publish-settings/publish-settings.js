@@ -10,7 +10,7 @@ import { collection, getDocs, addDoc } from "@firebase/firestore"
 
 
 const PublishSettings = () => {
-    const [createdPost, setCreatedPost] = useState([]);
+    // const [createdPost, setCreatedPost] = useState([]);
     const [newTitle, setNewTitle] = useState("")
     const [newText, setNewText] = useState("")  
     // const [newImage, setnewImage] = useState("")
@@ -22,16 +22,15 @@ const PublishSettings = () => {
         alert("Your post succesfully posted. Go to home page to see it!")
     }
  
-    useEffect(() => {
-        getPosts()
-    },[])
+    // useEffect(() => {
+    //     getPosts()
+    // },[])
 
-    function getPosts() {
-        getDocs(postsCollectionRef).then((res) => {
-            setCreatedPost(res.docs.map((doc) => ({ ...doc.data(), id: doc.id})))
-        })
-    }
-
+    // function getPosts() {
+    //     getDocs(postsCollectionRef).then((res) => {
+    //         setCreatedPost(res.docs.map((doc) => ({ ...doc.data(), id: doc.id})))
+    //     })
+    // }
 
     return(
         <div>
@@ -45,7 +44,7 @@ const PublishSettings = () => {
                     id="title"
                     placeholder="Text Input"
                     className={style.publish_title}
-                    onChange={(e) => { setNewTitle(e.target.value) }}
+                    onChange={(e) => {setNewTitle(e.target.value) }}
                 />
                 <div className={style.text_header}>Описание</div>
                 <textarea
