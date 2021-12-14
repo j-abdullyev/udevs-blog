@@ -1,30 +1,24 @@
-import { useState } from "react/cjs/react.development"
+// import { useState } from "react/cjs/react.development"
 import Footer from "../home-page/footer/footer"
 import Header from "../home-page/header/header"
 import style from './publishSettings.module.css'
 import {db}  from "../../firebase"
-import React, { useEffect } from "react"
+import React, { useEffect , useState} from "react"
 import { collection, getDocs, addDoc } from "@firebase/firestore"
-
-
 
 const PublishSettings = () => {
     const [newTitle, setNewTitle] = useState("")
     const [newText, setNewText] = useState("")  
     const postsCollectionRef = collection(db, '7');
-
     const createPost = async () => {
         await addDoc(postsCollectionRef, {title: newTitle, text: newText})
         window.location.reload(false);
         alert("Your post succesfully posted. Go to home page to see it!")
     }
-
     return(
         <div>
             <Header />
-
             <div className={style.publish}>
-
                 <h2 className={style.h2}> Настройки публикации </h2>
                 <div className={style.title_header}>Название</div>
                 <input
@@ -42,15 +36,10 @@ const PublishSettings = () => {
                 />
                 <button className={style.publish_btn} onClick={createPost}>Publish</button>
             </div>
-
             <Footer />
         </div>
-       
     )
-
 }
-
-
 export default PublishSettings
 
 
