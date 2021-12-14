@@ -9,10 +9,8 @@ import { collection, getDocs, addDoc } from "@firebase/firestore"
 
 
 const PublishSettings = () => {
-    // const [createdPost, setCreatedPost] = useState([]);
     const [newTitle, setNewTitle] = useState("")
     const [newText, setNewText] = useState("")  
-    // const [newImage, setnewImage] = useState("")
     const postsCollectionRef = collection(db, '7');
 
     const createPost = async () => {
@@ -20,16 +18,6 @@ const PublishSettings = () => {
         window.location.reload(false);
         alert("Your post succesfully posted. Go to home page to see it!")
     }
- 
-    // useEffect(() => {
-    //     getPosts()
-    // },[])
-
-    // function getPosts() {
-    //     getDocs(postsCollectionRef).then((res) => {
-    //         setCreatedPost(res.docs.map((doc) => ({ ...doc.data(), id: doc.id})))
-    //     })
-    // }
 
     return(
         <div>
@@ -52,14 +40,8 @@ const PublishSettings = () => {
                     rows="10"
                     onChange={(e) => {setNewText(e.target.value)}}
                 />
-                {/* <input
-                                value={this.state.image}
-                                placeholder="Input image URL here"
-                                onChange={(e) => this.setState({image: e.target.value})}
-                            /> */}
                 <button className={style.publish_btn} onClick={createPost}>Publish</button>
             </div>
-
 
             <Footer />
         </div>
