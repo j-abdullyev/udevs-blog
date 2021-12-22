@@ -6,15 +6,10 @@ import {db} from '../../../firebase'
 import {collection, getDocs} from '@firebase/firestore'
 import ProfileInfo from "../../profile-page/profile-info/profileInfo";
 
-
-
-
 const BlogList = (props) => {
-    
 
     const [post, setPost] = useState([]);   
     const postsCollectionRef = collection(db, '7');
-
 
     useEffect(() => {
         getPosts()
@@ -26,16 +21,15 @@ const BlogList = (props) => {
         })
     }
 
-    
     return(
         <div className={style.blog_container}>
             <div className={style.blog_container_inner}>
                 {post.map((item) => (
                     <BlogListItem key={item.id} {...item} />
                 ))}
-                {post.map((item)=> {
+                {/* {post.map((item)=> {
                     <ProfileInfo key={item.id} {...item} />
-                })}
+                })} */}
             </div>
         </div>
     )

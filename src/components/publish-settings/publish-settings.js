@@ -11,7 +11,7 @@ const PublishSettings = () => {
     const [newText, setNewText] = useState("")  
     const postsCollectionRef = collection(db, '7');
     const createPost = async () => {
-        await addDoc(postsCollectionRef, {title: newTitle, text: newText})
+        await addDoc(postsCollectionRef, {title: newTitle, text: newText, status: true})
         window.location.reload(false);
         alert("Your post succesfully posted. Go to home page to see it!")
     }
