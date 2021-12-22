@@ -49,10 +49,11 @@ const ProfileInfo = ({id, title, text, status}) => {
                 </div>
             </div>
 
-            <div>
+            <div className={style.publication}>
+                <h3>ПУБЛИКАЦИИ</h3>
                 {post.map((item) => {
-                    if(item.status){
-                        return(
+                    if (item.status) {
+                        return (
                             <div className={style.publication_block}>
                                 <img src={guys2} alt=""></img>
                                 <div className={style.publication_text}>
@@ -64,20 +65,14 @@ const ProfileInfo = ({id, title, text, status}) => {
                             </div>
                         )
                     }
-                    console.log(item.status)
                 })}
-            </div>
-            
-
-            <div className={style.publication}>
-                <h3>ПУБЛИКАЦИИ</h3>
                 <div className={style.publication_block}>
-                    
-                    <img src={guys2} alt=""></img>         
+
+                    <img src={guys2} alt=""></img>
                     <div className={style.publication_text}>
-                        
+
                         <div className={style.p_header}>asdasd</div>
-                       <div className={style.p_date}>18:26  11.01.2021 <span>|</span> <span>365</span> <span className={style.human_rights}>Права человека</span> </div>
+                        <div className={style.p_date}>18:26  11.01.2021 <span>|</span> <span>365</span> <span className={style.human_rights}>Права человека</span> </div>
                         <div className={style.p_text}>Посланник Генерального секретаря ООН по делам молодежи Джаятма Викраманаяке приняла участие в презентации созданной по инициативе Узбекистана Группе друзей по правам молодежи. В рамках этого международного проекта планируется продвижение прав молодых жителей планеты и расшире...</div>
                         <button className={style.read_btn}>Читать</button>
                     </div>
